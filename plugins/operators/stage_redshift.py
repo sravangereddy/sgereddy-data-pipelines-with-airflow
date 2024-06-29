@@ -12,7 +12,7 @@ class StageToRedshiftOperator(BaseOperator):
             self,
             s3_path,
             target_table,
-            json_path=None,
+            json_path="auto",
             aws_redshift_conn_id="redshift_default",
             aws_credentials_conn_id="aws_credentials",
             *args,
